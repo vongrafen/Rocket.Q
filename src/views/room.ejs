@@ -32,7 +32,7 @@
         <img src="images/logo.svg" alt="Roquet.Q Logo" />
       </a>
       <div class="buttons">
-        <div class="button outlined">
+        <div class="button outlined" id="room-id" data-id="323243">
           #323243
           <img src="/images/copy.svg" alt="Copiar número da sala">
         </div>
@@ -77,11 +77,11 @@
               </div>
             </div>
             <div class="actions">
-              <a href="#" class="checks">
+              <a href="#" class="check" data-id="2">
                 <img src="/images/check.svg" alt="Check">
                 Marcar como lida
               </a>
-              <a href="#" class="delete">
+              <a href="#" class="delete" data-id="2">
                 <img src="/images/thrash.svg" alt="Trash">
                 Excluir
               </a>
@@ -98,11 +98,32 @@
               </div>
             </div>
             <div class="actions">
-              <a href="#" class="checks">
+              <a href="#" class="check" data-id="3">
                 <img src="/images/check.svg" alt="Check">
                 Marcar como lida
               </a>
-              <a href="#" class="delete">
+              <a href="#" class="delete" data-id="3">
+                <img src="/images/thrash.svg" alt="Trash">
+                Excluir
+              </a>
+            </div>
+          </div>
+
+          <div class="question-wrapper">
+            <div class="question-content">
+              <div class="user">
+                <img src="/images/user.svg" alt="Avatar">
+              </div>
+              <div class="question">
+                <p>O que é Javascript dentro do Javascript?</p>
+              </div>
+            </div>
+            <div class="actions">
+              <a href="#" class="check" data-id="4">
+                <img src="/images/check.svg" alt="Check">
+                Marcar como lida
+              </a>
+              <a href="#" class="delete" data-id="4">
                 <img src="/images/thrash.svg" alt="Trash">
                 Excluir
               </a>
@@ -119,9 +140,9 @@
               </div>
             </div>
             <div class="actions">
-              <a href="#" class="checked">
-                <img src="/images/check.svg" alt="Check">
-                Pergunta Lida
+              <a href="#" class="delete" data-id="1">
+                <img src="/images/thrash.svg" alt="Trash">
+                Excluir
               </a>
             </div>
           </div>
@@ -141,7 +162,7 @@
       <h2>Excluir pergunta</h2>
       <p>Tem certeza que você deseja excluir essa pergunta?</p>
 
-      <form action="#">
+      <form action="#" method="post">
         <label for-id="password" class="sr-only">Digite sua senha admin</label>
         <input type="password" name="password" id="password" placeholder="Senha">
 
